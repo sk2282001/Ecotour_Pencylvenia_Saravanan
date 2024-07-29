@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+p{
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.toggle-btn{
+    width: 50px;
+    cursor: pointer;
+}
+.toggle-btn span{
+    display: block;
+    border: 2px solid black;
+    padding: 0;
+    background: black;
+    height: 1px;
+    width: 30px;
+    margin-bottom: 5px;
+}
+.head-items img{
+    height: 100px;
+}
+.get-in{
+    border: 1px solid greenyellow;
+    padding: 20px;
+    cursor: pointer;
+}
+.get-in:hover{
+    background: rgb(218, 210, 210);
+}
+.side-nav{
+    display: none;
+    position: fixed;
+    background: greenyellow;
+    width: 20rem;
+    height: 100vh;
+    top: 0;
+    z-index: 100;
+}
+.side-nav span{
+    position: absolute;
+    right: 0;
+    font-weight: bold;
+    font-size: large;
+    background: rgb(219, 44, 73);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+.side-nav-list{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    
+}
+.side-nav-list a{
+    text-align: center;
+    padding: 10px 0;
+    width:  100%;
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+}
+.side-nav-list a:hover{
+    background: green;
+}
+.active:link,
+.active:visited{
+    background-color: green;
+}
+
+.book{
+    color: white;
+    background: greenyellow;
+    width: 100%;
+    min-height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.book-in{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+.book i{
+    font-size: 2.5rem;
+}
+.book div{
+    margin:0 5rem 2rem 2rem;
+    height: 5rem;
+    display: flex;
+}
+.book a{
+    color: greenyellow;
+    text-decoration: none;
+    background: white;
+    padding: 1rem;
+}
+.book a:hover{
+    background: rgb(175, 162, 162);
+}
+.footer{
+    background: rgb(95, 154, 6);
+    width: 100%;
+    min-height: 70vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color: white;
+}
+.footer img{
+    height: 5rem;
+}
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 14rem;
+    margin-top: 5rem;
+    text-align: center;
+}
+.footer-content p{
+    padding: 1rem;
+}
+.footer-content a{
+    color: white;
+    text-decoration: none;
+    line-height: 3rem;
+}
+.icon a{
+    margin: 0.5rem;
+    font-size: 1.5rem;
+}
+.icon a i {
+    animation: big 1s infinite;
+  }
+  
+  @keyframes big {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+  }
+.footer-heading{
+    color: green;
+}
+@media (max-width:60rem) {
+    .book{
+        flex-direction: column;
+        height: 40vh;
+    }
+    .book div{
+        margin-right: 1rem;
+    }
+}
+@media (max-width:40rem) {
+    .side-nav{
+        width: 50vw;
+    }
+  
+}
+@media (max-width:30rem) {
+    .toggle-btn{
+        padding: 0;
+         width: 30px;
+         cursor: pointer;
+     }
+     .toggle-btn span{
+        width: 20px;
+        height: 0.5px;
+     }
+     .head-items img{
+        height: 60px;
+    }
+    .get-in{
+        padding: 0.5rem;
+    }
+    .get-in a, .get-in i{
+        font-size: 0.8rem;
+    }
+    .book h1{
+        font-size: 1.5rem;
+       }
+       .book a{
+        padding:0.7rem 1rem;
+       }
+
+}
+@media (max-height:30rem) {
+    .side-nav-list{
+        margin-top: 0;
+    }
+    .side-nav-list a{
+        margin: 0 auto;
+    }
+}
